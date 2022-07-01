@@ -24,17 +24,17 @@ function ProductList(props) {
 
     let [productList, setProductList] = useState([])
 
-    useEffect(() => {
-        console.log("In Product List Init:", props.updatePage)
-        fetch('http://localhost:3005/get-products', { method: 'GET', credentials: 'include' })
-            .then((response) => {
-                return response.json()
-            })
-            .then((data) => {
-                setProductList(data.sort((a, b) => triProductByName(a, b)))
-            })
-    },[]
-    )
+    // useEffect(() => {
+    //     console.log("In Product List Init:", props.updatePage)
+    //     fetch('http://localhost:3005/get-products', { method: 'GET', credentials: 'include' })
+    //         .then((response) => {
+    //             return response.json()
+    //         })
+    //         .then((data) => {
+    //             setProductList(data.sort((a, b) => triProductByName(a, b)))
+    //         })
+    // },[]
+    // )
 
     useEffect(() => {
         console.log("In Product List useEffect:", props.updatePage)
