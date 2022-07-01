@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 .App {
   text-align: center;
+  background-image: url("../public/pexels-pixabay-235974.jpg");
+  /**background-color: bisque;*/
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .App-logo {
@@ -7,11 +18,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +41,131 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.addproductform{
+  margin: 5px;
+  padding: 20px;
+  border: solid 1px;
+  border-radius: 30px;
+  background-color: bisque;
+}
+
+.form-label{
+  display: flex;
+}
+
+.Product{
+  text-align: center;
+  width: 50px;
+  background-color: white;
+}
+
+.quickdescription{
+
+  height: 100px;
+  text-align: left;
+  overflow-y: scroll;
+  background-color: rgb(238, 238, 238);
+}
+
+.quickDescriptionDetailed{
+  height: 200px;
+  text-align: left;
+  overflow-y: scroll;
+  background-color: rgb(238, 238, 238);
+}
+
+.longDescriptionDetailed{
+  height: 200px;
+  text-align: left;
+  overflow-y: scroll;
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+}
+
+
+
+.lineNoMargin{
+  margin:0%
+}
+
+.lineLittleMargin{
+  margin:5%
+}
+
+.imageProductPreview{
+  width: 150px;
+  height: auto;
+  margin: 0%;
+}
+
+.imageProductDetailed{
+  width: 200px;
+  height: auto;
+  margin: 0%;
+}
+
+.Product{
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px;
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+  
+}
+
+.ProductList{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+.headerWelcome{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.hrefWelcome{
+  margin: 5px;
+}
+
+.modalTitle{
+  text-align: center
+}
+
+
+.productToDelete{
+  width: 50%;
+  height: auto;
+  margin: 5px;
+  padding: 20px;
+  border: solid 1px;
+  border-radius: 30px;
+}
+
+.ecommerceName{
+  margin-top: 10px;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+
+.profileDisplay{
+  text-align: center;
+  text-indent: 10px;
+  color: white;
+  font: bold;
+  font-size:medium;
+  margin-top: 10px;
+}
+
+.logButton{
+  margin-top: 15px;
 }

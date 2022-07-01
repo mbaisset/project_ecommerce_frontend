@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-flat {
+  background-color: purple;
+  color: white;
+  border: solid 1px;
+  border-radius: 30px;
+}
