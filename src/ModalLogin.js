@@ -45,7 +45,7 @@ function ModalLogin(props) {
             .then(json)
             .then(function (data) {
                 console.log('Success:', data);
-                props.handleLogin(data['login']);
+                props.handleLogin(data);
                 setShow(false);
             }).catch(function (error) {
                 console.log('Request failed', error);

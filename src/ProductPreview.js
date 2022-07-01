@@ -34,6 +34,27 @@ function ProductPreview(props) {
 
     }
 
+    function handleAddtobasket (event) {
+        event.preventDefault()
+       
+        fetch('http://localhost:3005/add-product-basket', {
+            method: 'POST',
+            credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, price}),
+        })
+            .then(response => response.json())
+            .then(data => {
+                alert("Product successfully added to your basket")
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            })
+    }
+
     useEffect(() => {
         setName(props.name)
         setPrice(props.price)
@@ -80,7 +101,7 @@ function ProductPreview(props) {
                     </Col>
                     {props.profile != "admin" &&
                         <Col md={6}>
-                            <Button variant="outline-warning" size="sm" onClick={handleShowModify}>
+                            <Button variant="outline-warning" size="sm" onClick={handleAddtobasket}>
                                 Add to basket
                             </Button>
                         </Col>
